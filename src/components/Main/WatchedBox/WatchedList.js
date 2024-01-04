@@ -5,7 +5,7 @@ export function WatchedList({ watched, onDeleteWatched }) {
       {watched.map((movie) => (
         <WatchedMovie
           movie={movie}
-          key={movie.imdbID}
+          key={movie.imdbId}
           onDeleteWatched={onDeleteWatched}
         />
       ))}

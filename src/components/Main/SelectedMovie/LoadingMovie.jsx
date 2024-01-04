@@ -33,30 +33,24 @@ export default function SelectedMovie({ onCloseMovie }) {
               color="#515A63"
             ></ReactPlaceholder>
           </h2>
-          <p>
-            <ReactPlaceholder
-              showLoadingAnimation
-              type="text"
-              rows={1}
-              color="#515A63"
-            ></ReactPlaceholder>
-          </p>
-          <p>
-            <ReactPlaceholder
-              showLoadingAnimation
-              type="text"
-              rows={1}
-              color="#515A63"
-            ></ReactPlaceholder>
-          </p>
-          <p>
-            <ReactPlaceholder
-              showLoadingAnimation
-              type="text"
-              rows={1}
-              color="#515A63"
-            ></ReactPlaceholder>
-          </p>
+          <ReactPlaceholder
+            showLoadingAnimation
+            type="text"
+            rows={1}
+            color="#515A63"
+          ></ReactPlaceholder>
+          <ReactPlaceholder
+            showLoadingAnimation
+            type="text"
+            rows={1}
+            color="#515A63"
+          ></ReactPlaceholder>
+          <ReactPlaceholder
+            showLoadingAnimation
+            type="text"
+            rows={1}
+            color="#515A63"
+          ></ReactPlaceholder>
         </div>
       </header>
 
@@ -70,22 +64,18 @@ export default function SelectedMovie({ onCloseMovie }) {
             color="#515A63"
           ></ReactPlaceholder>
         </em>
-        <p>
-          <ReactPlaceholder
-            showLoadingAnimation
-            type="text"
-            rows={1}
-            color="#515A63"
-          ></ReactPlaceholder>
-        </p>
-        <p>
-          <ReactPlaceholder
-            showLoadingAnimation
-            type="text"
-            rows={1}
-            color="#515A63"
-          ></ReactPlaceholder>
-        </p>
+        <ReactPlaceholder
+          showLoadingAnimation
+          type="text"
+          rows={1}
+          color="#515A63"
+        ></ReactPlaceholder>
+        <ReactPlaceholder
+          showLoadingAnimation
+          type="text"
+          rows={1}
+          color="#515A63"
+        ></ReactPlaceholder>
       </section>
     </div>
   );

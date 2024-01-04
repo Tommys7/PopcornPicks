@@ -9,8 +9,6 @@ export function WatchedMovie({ movie, onDeleteWatched }) {
     setImageLoaded(true);
   };
 
-  console.log(movie.imdbId);
-
   const image = (
     <img
       src={movie.poster !== "N/A" ? movie.poster : "/popcorn.svg"}

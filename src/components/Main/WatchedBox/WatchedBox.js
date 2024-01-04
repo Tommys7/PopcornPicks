@@ -17,7 +17,6 @@ export function WatchedBox({ average, watchedData, onDeleteWatched }) {
         <>
           <Summary average={average} watched={watchedData} />
           <WatchedList
-            key={watchedData}
             watched={watchedData}
             onDeleteWatched={onDeleteWatched}
           />
