@@ -29,7 +29,7 @@ export function SelectedMovie({
     function () {
       async function getMovieDetails() {
         setIsLoading(true);
-        await new Promise((resolve) => setTimeout(resolve, 1000));
+        await new Promise((resolve) => setTimeout(resolve, 500));
         const res = await fetch(
           `https://www.omdbapi.com/?i=${selectedId}&apikey=${APIKEY}`
         );
