@@ -3,7 +3,7 @@ import { WatchedBox } from "./WatchedBox/WatchedBox";
 import { SelectedMovie } from "./SelectedMovie/SelectedMovie";
 import { Loader } from "./Loader/Loader";
 import { ErrorMessage } from "./Error/Error";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export function Main({
   movies,
@@ -15,9 +15,14 @@ export function Main({
   handleSelectMovie,
   onCloseMovie,
 }) {
-  const [watchedMovies, setWatchedMovies] = useState([]);
+  const [watchedMovies, setWatchedMovies] = useState(() => {
+    const storedMovies = localStorage.getItem("watchedMovies");
+    return storedMovies ? JSON.parse(storedMovies) : [];
+  });
 
-  console.log(watchedMovies);
+  useEffect(() => {
+    localStorage.setItem("watchedMovies", JSON.stringify(watchedMovies));
+  }, [watchedMovies]);
 
   function handleAddWatched(newMovie) {
     setWatchedMovies((watchedMovies) => [...watchedMovies, newMovie]);

@@ -39,6 +39,13 @@ body {
   padding: 0 3.2rem;
   background-color: var(--color-primary);
   border-radius: 0.9rem;
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    height: unset;
+    gap: 1rem;
+    padding: 1rem;
+  }
 }
 
 .main {
@@ -47,6 +54,10 @@ body {
   display: flex;
   gap: 2.4rem;
   justify-content: center;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    height: unset;
+  }
 }
 
 .box {
@@ -56,6 +67,11 @@ body {
   border-radius: 0.9rem;
   overflow-y: scroll;
   position: relative;
+  @media (max-width: 1024px) {
+    max-width: unset;
+    width: 100%;
+    height: 400px;
+  }
 }
 
 ::-webkit-scrollbar {
@@ -116,6 +132,9 @@ body {
 
   /* background-color: var(--color-background-900); */
   background-color: var(--color-primary-light);
+  @media (max-width: 1024px) {
+    width: unset;
+  }
 }
 
 .search::placeholder {
@@ -196,6 +215,11 @@ body {
   display: flex;
   align-items: center;
   gap: 2.4rem;
+  @media (max-width: 1024px) {
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-right: 1.5rem;
+  }
 }
 
 .list p {
@@ -245,6 +269,10 @@ body {
   gap: 2.4rem;
   font-size: 1.6rem;
   font-weight: 600;
+  @media (max-width: 1024px) {
+    flex-wrap: wrap;
+    row-gap: 1rem;
+  }
 }
 
 .summary p {
@@ -273,7 +301,7 @@ body {
 
 .details img {
   width: 33%;
-  height: 232px;
+
   object-fit: cover;
 }
 
