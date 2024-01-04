@@ -38,7 +38,7 @@ export function Main({
     <main className="main">
       {isLoading && <Loader />}
       {error && <ErrorMessage message={error} />}
-      {!isLoading && !error && (
+      {!isLoading && !error && !selectedId && (
         <ListBox movies={movies} handleSelectMovie={handleSelectMovie} />
       )}
       {selectedId ? (
